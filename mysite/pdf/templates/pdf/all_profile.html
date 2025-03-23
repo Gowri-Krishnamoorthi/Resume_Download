@@ -65,7 +65,7 @@
                 {% for person in profile %}
                 <tr>
                     <td>{{ person.name }}</td>
-                    <td><a href="{% url 'download_profile' person.id %}" class="download-btn">Download</a></td>
+                    <td><a href="{% url 'resume' person.id %}" class="download-btn">Download</a></td>
                 </tr>
                 {% endfor %}
             </tbody>

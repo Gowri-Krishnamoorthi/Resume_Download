@@ -21,7 +21,6 @@ from pdf import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.createprofile , name='creatprofile'),
-    path('<int:id>/',views.resume , name='resume' ),
+    path('<int:id>/',views.resume , name='resume'),
     path('list/', views.list, name='list'),
-    path('download/<int:id>/', views.download_profile, name='download_profile'),  # ✅ Separate download route
 ]
